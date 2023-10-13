@@ -1,6 +1,6 @@
-import vanya from '../../assets/images/ivan.jpg';
-import misha from '../../assets/images/misha.jpg';
-import max from '../../assets/images/max.jpg';
+import vanya from '../../../public/assets/images/ivan.jpg';
+import max from '../../../public/assets/images/max.jpg';
+import misha from '../../../public/assets/images/misha.jpg';
 import Person from './Person';
 
 const Team = () => {

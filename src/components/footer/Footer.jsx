@@ -1,6 +1,6 @@
+import HackatonLogo from '../../../public/assets/svg/HackatonLogo';
+import { RailwaysLogo } from '../../../public/assets/svg/Railways';
 import '../../styles/footer.scss';
-import HackatonLogo from '../../assets/svg/HackatonLogo';
-import { RailwaysLogo } from '../../assets/svg/Railways';
 
 const Footer = () => {
   return (

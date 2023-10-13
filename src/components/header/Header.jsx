@@ -1,10 +1,10 @@
-import '../../styles/header.scss';
 import { GithubLogo } from '@phosphor-icons/react';
+import '../../styles/header.scss';
 
-import { useScroll } from '../../hooks/useScroll';
-import HackatonLogo from '../../assets/svg/HackatonLogo';
 import { NavLink } from 'react-router-dom';
-import { RailwaysLogo } from '../../assets/svg/Railways';
+import HackatonLogo from '../../../public/assets/svg/HackatonLogo';
+import { RailwaysLogo } from '../../../public/assets/svg/Railways';
+import { useScroll } from '../../hooks/useScroll';
 
 const Header = () => {
   const isScrolled = useScroll();

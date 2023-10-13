@@ -1,15 +1,15 @@
 {
-	"short_name": "Сканер дорог",
-	"name": "Сканер дорог",
+	"short_name": "Анализатор Текста",
+	"name": "Анализатор Текста",
 	"icons": [
 		{
-			"src": "./favicon/scanner-icon.png",
+			"src": "./public/assets/favicons/scanner-icon.png",
 			"type": "image/png",
 			"sizes": "192x192",
 			"purpose": "maskable"
 		},
 		{
-			"src": "./favicon/scanner-icon.png",
+			"src": "./public/assets/favicons/scanner-icon.png",
 			"type": "image/png",
 			"sizes": "512x512",
 			"purpose": "maskable"
