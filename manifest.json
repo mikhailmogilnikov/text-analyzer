@@ -1,0 +1,22 @@
+{
+	"short_name": "Сканер дорог",
+	"name": "Сканер дорог",
+	"icons": [
+		{
+			"src": "./favicon/scanner-icon.png",
+			"type": "image/png",
+			"sizes": "192x192",
+			"purpose": "maskable"
+		},
+		{
+			"src": "./favicon/scanner-icon.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "maskable"
+		}
+	],
+	"start_url": ".",
+	"display": "standalone",
+	"background_color": "#000000",
+	"theme_color": "#000000"
+}
