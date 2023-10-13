@@ -1,10 +1,12 @@
 import { Route, Routes } from 'react-router-dom';
 import UseToTop from './hooks/useToTop';
 import './styles/main.scss';
-import Home from './components/home/Home.jsx';
-import Action from './components/action/Action.jsx';
+
 import Header from './components/header/Header.jsx';
 import Footer from './components/footer/Footer.jsx';
+
+import Home from './components/home/Home.jsx';
+import Action from './components/action/Action.jsx';
 import Presentation from './components/presentation/Presentation.jsx';
 
 function App() {
