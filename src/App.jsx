@@ -2,10 +2,10 @@ import { Route, Routes } from 'react-router-dom';
 import UseToTop from './hooks/useToTop';
 import './styles/main.scss';
 import Home from './components/home/Home.jsx';
-import { Presentation } from '@phosphor-icons/react';
 import Action from './components/action/Action.jsx';
 import Header from './components/header/Header.jsx';
 import Footer from './components/footer/Footer.jsx';
+import Presentation from './components/presentation/Presentation.jsx';
 
 function App() {
   return (

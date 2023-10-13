@@ -1,5 +1,5 @@
 import { CircleNotch, CloudArrowUp,  } from '@phosphor-icons/react';
-import '../../styles/graph.scss';
+import '../../styles/action.scss';
 import { useState } from 'react';
 
 const Action = () => {

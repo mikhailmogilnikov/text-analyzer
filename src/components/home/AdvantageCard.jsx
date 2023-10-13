@@ -25,7 +25,7 @@ const AdvantageCard = ({ icon, name, desc }) => {
 };
 
 AdvantageCard.propTypes = {
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.string,
   name: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
 };
