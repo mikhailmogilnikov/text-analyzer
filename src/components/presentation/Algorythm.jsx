@@ -8,7 +8,7 @@ const Algorythm = () => {
 			<div className='algo-wrapper'>
 				<AlgoItem
 					num='1'
-					name='Получение видеопотока'
+					name='Отправка скан-образа'
 					desc='Фиксация видео с камеры или загруженного файла.'
 				/>
 				<AlgoItem
