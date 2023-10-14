@@ -1,5 +1,5 @@
 import JavaScript from '../../../public/assets/images/JavaScript.png';
-import OpenCV from '../../../public/assets/images/OpenCV.png';
+import LLaMa from '../../../public/assets/images/LLaMa.jpeg';
 import Python from '../../../public/assets/images/python.png';
 import ToolsCard from './ToolsCard';
 
@@ -22,27 +22,39 @@ const Tools = () => {
           }
         />
         <ToolsCard
-          img={OpenCV}
-          name={'OpenCV'}
+          img={LLaMa}
+          name={'LLaMa'}
           desc={
-            'Библиотека алгоритмов компьютерного зрения и обработки изображений.'
+            'Приватная языковая модель, разворачиваемая на локальном сервере.'
           }
         />
         <ToolsCard
           name={'Pdftables'}
-          desc={
-            'Библиотека для перевода PDF-файлов в Excel-формат.'
-          }
+          desc={'Библиотека для перевода PDF-файлов в Excel-формат.'}
         />
         <ToolsCard
           name={'Openpyxl'}
+          desc={'Библиотека для продвинутой работы с Excel-файлами.'}
+        />
+        <ToolsCard
+          name={'Fire'}
+          desc={'Библиотека, необходимая для корректной работы языковой модели'}
+        />
+        <ToolsCard
+          name={'Bun'}
           desc={
-            'Библиотека для продвинутой работы с Excel-файлами.'
+            'Сверхбыстрая среда выполнения JavaScript, менеджер пакетов и сборщик тестов.'
           }
         />
         <ToolsCard
-          name={'OpenLabeling'}
-          desc={'Инструмент для разметки полученного датасета.'}
+          name={'Flask'}
+          desc={'Микрофреймворк для создания веб-приложений на Python.'}
+        />
+        <ToolsCard
+          name={'React'}
+          desc={
+            'Библиотека для создания пользовательских интерфейсов на JavaScript.'
+          }
         />
         <ToolsCard
           name={'HTML'}
@@ -57,27 +69,9 @@ const Tools = () => {
           }
         />
         <ToolsCard
-          name={'React'}
-          desc={
-            'Библиотека для создания пользовательских интерфейсов на JavaScript.'
-          }
-        />
-        <ToolsCard
           name={'React-dropzone'}
           desc={
             'Библиотека для React, позволяющая делать продвинутые области прикрепления файлов.'
-          }
-        />
-        <ToolsCard
-          name={'Recharts'}
-          desc={
-            'Библиотека для построения графиков на основе полученных данных.'
-          }
-        />
-        <ToolsCard
-          name={'Tkinter'}
-          desc={
-            'Библиотека для Python, используемая для получения файлов из Windows.'
           }
         />
       </div>
