@@ -1,14 +1,14 @@
-import { AppWindow, ChartBar, UserFocus } from '@phosphor-icons/react'
+import { Devices, GitFork, LockKey } from '@phosphor-icons/react'
 import PropTypes from 'prop-types';
 
 const AdvantageCard = ({ icon, name, desc }) => {
   let iconComponent;
   if (icon === 'App') {
-    iconComponent = <AppWindow weight="thin" className="icon-card adv" />;
+    iconComponent = <LockKey weight="thin" className="icon-card adv" />;
   } else if (icon === 'Paperclip') {
-    iconComponent = <UserFocus weight="thin" className="icon-card adv" />;
+    iconComponent = <Devices weight="thin" className="icon-card adv" />;
   } else if (icon === 'Chartline') {
-    iconComponent = <ChartBar weight="thin" className="icon-card adv" />;
+    iconComponent = <GitFork weight="thin" className="icon-card adv" />;
   } else {
     iconComponent = null;
   }

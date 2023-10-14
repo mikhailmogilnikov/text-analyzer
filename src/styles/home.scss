@@ -156,6 +156,7 @@
 
 		&:active {
 			transform: scale(0.97);
+			box-shadow: 0 0 20px 0 rgba(154, 116, 215, 0.45) !important;
 		}
 
 		@media (max-width: 600px) {
