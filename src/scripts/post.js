@@ -8,7 +8,7 @@ const post = (fileContents, file) => {
     file.name,
   );
   axios
-    .post('http://192.168.43.227:5000/upload', formData)
+    .post('http://127.0.0.1:5000/upload', formData)
     .then((response) => {
       console.log('File uploaded successfully', response.data);
     })
