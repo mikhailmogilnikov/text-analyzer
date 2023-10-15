@@ -1,4 +1,4 @@
-import { CircleNotch, CloudArrowUp,  } from '@phosphor-icons/react';
+import { CircleNotch, CloudArrowUp, WebhooksLogo } from '@phosphor-icons/react';
 import '../../styles/action.scss';
 import { useState } from 'react';
 
@@ -30,44 +30,95 @@ const Action = () => {
         <div className="map-header">
           <h1>Онлайн-анализатор документов</h1>
           {state === null ? (
-            <p className="low-opacity">
-              Ожидание скан-образа (.pdf, .docx).
-            </p>
+            <p className="low-opacity">Ожидание скан-образа (.pdf, .docx).</p>
           ) : (
-            <p style={{ color: '#34da1e' }}>Файл с данными прочитан.</p>
+            <p style={{ color: '#dad71e' }}>
+              Ожидание проверки. Пожалуйста, подождите.
+            </p>
+            // <></>
           )}
         </div>
         {state === null ? (
-        //   <Dropzone
-        //     // onDrop={onDrop}
-        //     accept={{ 'data/csv': ['.csv'] }}
-        //     maxFiles={1}
-        //   >
-        //     {({ getRootProps, getInputProps, onDropAccepted }) => (
-            //   <div {...getRootProps()} className="attach-field">
-            //     <input {...getInputProps()} />
-			<div className="attach-field" onClick={changeState}>
-                <CloudArrowUp className="icon-attach" />
-                <h2>Прикрепите файл или перетащите его в это поле</h2>
-              </div>
-        //     )}
-        //   </Dropzone>
+          //   <Dropzone
+          //     // onDrop={onDrop}
+          //     accept={{ 'data/csv': ['.csv'] }}
+          //     maxFiles={1}
+          //   >
+          //     {({ getRootProps, getInputProps, onDropAccepted }) => (
+          //   <div {...getRootProps()} className="attach-field">
+          //     <input {...getInputProps()} />
+          <div className="attach-field" onClick={changeState}>
+            <CloudArrowUp className="icon-attach" />
+            <h2>Прикрепите файл или перетащите его в это поле</h2>
+          </div>
         ) : (
+          //     )}
+          //   </Dropzone>
           <>
-            <div className="map">
+            <div style={{ padding: '100px' }}>
               <CircleNotch
                 weight="bold"
                 className="icon-big loader low-opacity"
               />
-              {/* <Chart data={state} width={400} height={300} /> */}
             </div>
+
+            {/* <div className="scale-wrapper" style={{ padding: '50px' }}>
+              <h2>Тип акта: М-10</h2>
+              <div className="scale-item" style={{ borderColor: '#34da1e51' }}>
+                <p
+                  style={{
+                    textAlign: 'center',
+                    width: '100%',
+                    color: '#34da1e',
+                  }}
+                >
+                  Успешно! Файл соответствует критериям акта.
+                </p>
+              </div>
+            </div> */}
+
+            {/* <div className="scale-wrapper" style={{ padding: '50px' }}>
+              <h2>Тип акта: М-10</h2>
+              <p
+                style={{
+                  textAlign: 'center',
+                  width: '100%',
+                  color: '#da1e1e',
+                  fontSize: '16px'
+                }}
+              >
+                Файл содержит ошибки.
+              </p>
+
+              <div className="scale-item" style={{ borderColor: '#da1e1e51' }}>
+                <p
+                  style={{
+                    textAlign: 'center',
+                    width: '100%',
+                  }}
+                >
+                  Ошибка
+                </p>
+              </div>
+              <div className="scale-item" style={{ borderColor: '#da1e1e51' }}>
+                <p
+                  style={{
+                    textAlign: 'center',
+                    width: '100%',
+                  }}
+                >
+                  Ошибка
+                </p>
+              </div>
+            </div> */}
+
             <div className="button-wrapper" style={{ maxWidth: '400px' }}>
               <div
                 style={{ marginTop: '40px' }}
                 onClick={changeState}
                 className="button select-zoom"
               >
-                <p>Очистить данные</p>
+                <p>Отмена</p>
               </div>
             </div>
           </>

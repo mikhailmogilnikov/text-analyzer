@@ -140,13 +140,12 @@
 	}
 
 	.large {
-		grid-row: span 2;
 		background-image: var(--git-grad);
+		height: 120px;
 		position: relative;
 		border: 0;
 		cursor: pointer;
 		transition: transform 0.2s, box-shadow 0.2s;
-		min-height: 250px;
 
 		@media (pointer: fine) {
 			&:hover {
@@ -160,7 +159,6 @@
 		}
 
 		@media (max-width: 600px) {
-			order: 4;
 		}
 
 		h2 {
@@ -168,12 +166,13 @@
 		}
 
 		.icon-git-large {
-			width: 200px;
+			width: 160px;
 			height: auto;
-			color: white;
+			color: rgb(255, 255, 255);
 			position: absolute;
 			bottom: -40px;
-			opacity: 0.8;
+			right: 40px;
+			opacity: 0.3;
 		}
 	}
 }

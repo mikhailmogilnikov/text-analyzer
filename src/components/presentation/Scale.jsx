@@ -1,4 +1,4 @@
-import { FileArchive, GearFine, Siren, WebhooksLogo } from '@phosphor-icons/react'
+import { FilePlus, GearFine, WebhooksLogo } from '@phosphor-icons/react'
 
 const Scale = () => {
 	return (
@@ -8,8 +8,7 @@ const Scale = () => {
 				<div className='scale-item'>
 					<WebhooksLogo weight='bold' className='icon-big' />
 					<p>
-						Доработка API, на который будут отправляться файлы для дообучения
-						нейросети.
+						Доработка API корпоративного сервера, на который будут отправляться файлы.
 					</p>
 				</div>
 
@@ -17,23 +16,14 @@ const Scale = () => {
 					<GearFine weight='bold' className='icon-big' />
 					<p>
 						Оптимизация архитектуры нейросети для ускорения обработки и
-						возможности работать на менее мощном оборудовании
+						возможности работать на менее мощном оборудовании.
 					</p>
 				</div>
 
 				<div className='scale-item'>
-					<Siren weight='bold' className='icon-big' />
+					<FilePlus weight='bold' className='icon-big' />
 					<p>
-						Подключение к системам оповещения и иному оборудования на посту
-						управления
-					</p>
-				</div>
-
-				<div className='scale-item'>
-					<FileArchive weight='bold' className='icon-big' />
-					<p>
-						Автоматический сбор данных об инцидентах и анализ результатов в виде
-						картографии инцидентов
+						Добавление новых форм актов для успешной валидации введенных данных.
 					</p>
 				</div>
 			</div>

@@ -1,14 +1,14 @@
-import { Warning, ClockCountdown, Cpu } from '@phosphor-icons/react';
+import { ClockCountdown, Hand, Bank } from '@phosphor-icons/react';
 import PropTypes from 'prop-types';
 
 const ProblemCard = ({ icon, name, desc }) => {
   let iconComponent;
   if (icon === 'Warning') {
-    iconComponent = <Cpu className="icon-card" />;
+    iconComponent = <Bank className="icon-card" />;
   } else if (icon === 'Graph') {
     iconComponent = <ClockCountdown className="icon-card" />;
   } else if (icon === 'CurrencyRub') {
-    iconComponent = <Warning className="icon-card" />;
+    iconComponent = <Hand className="icon-card" />;
   } else {
     iconComponent = null;
   }
