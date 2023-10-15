@@ -19,7 +19,7 @@ const ToolsCard = ({ name, desc, img }) => {
 };
 
 ToolsCard.propTypes = {
-    img: PropTypes.string.isRequired,
+    img: PropTypes.string,
     name: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,
 };

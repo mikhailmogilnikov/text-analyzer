@@ -1,6 +1,8 @@
-import { CircleNotch, CloudArrowUp, WebhooksLogo } from '@phosphor-icons/react';
+import { CircleNotch, CloudArrowUp } from '@phosphor-icons/react';
 import '../../styles/action.scss';
 import { useState } from 'react';
+import Dropzone from 'react-dropzone';
+import post from '../../scripts/post.js';
 
 const Action = () => {
   const [state, setState] = useState(null);
@@ -13,16 +15,16 @@ const Action = () => {
     }
   };
 
-  // const onDrop = acceptedFiles => {
-  // 	if (!acceptedFiles.length) return
-  // 	const file = acceptedFiles[0]
-  // 	const reader = new FileReader()
-  // 	reader.onload = e => {
-  // 		const csvData = e.target.result
-  // 		setState(parserCSV(csvData))
-  // 	}
-  // 	reader.readAsText(file)
-  // }
+  const onDrop = (acceptedFiles) => {
+    if (!acceptedFiles.length) return;
+    const file = acceptedFiles[0];
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const fileContents = e.target.result;
+      post(fileContents, file);
+    };
+    reader.readAsArrayBuffer(file);
+  };
 
   return (
     <div className="presentation-wrapper">
@@ -39,21 +41,21 @@ const Action = () => {
           )}
         </div>
         {state === null ? (
-          //   <Dropzone
-          //     // onDrop={onDrop}
-          //     accept={{ 'data/csv': ['.csv'] }}
-          //     maxFiles={1}
-          //   >
-          //     {({ getRootProps, getInputProps, onDropAccepted }) => (
-          //   <div {...getRootProps()} className="attach-field">
-          //     <input {...getInputProps()} />
-          <div className="attach-field" onClick={changeState}>
-            <CloudArrowUp className="icon-attach" />
-            <h2>Прикрепите файл или перетащите его в это поле</h2>
-          </div>
+          <Dropzone
+            onDrop={onDrop}
+            accept={{ 'data/pdf': ['.pdf'] }}
+            maxFiles={1}
+          >
+            {({ getRootProps, getInputProps }) => (
+              <div {...getRootProps()} className="attach-field">
+                <input {...getInputProps()} />
+
+                <CloudArrowUp className="icon-attach" />
+                <h2>Прикрепите файл или перетащите его в это поле</h2>
+              </div>
+            )}
+          </Dropzone>
         ) : (
-          //     )}
-          //   </Dropzone>
           <>
             <div style={{ padding: '100px' }}>
               <CircleNotch
