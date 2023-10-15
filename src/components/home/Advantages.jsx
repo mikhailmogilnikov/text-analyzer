@@ -43,7 +43,7 @@ const Advantages = () => {
                 }
             />
             <NavLink
-				to={'https://github.com/Sereneum/ai-railway-scanner-app'}
+				to={'https://github.com/Sereneum/text-analyzer-server'}
 				target='_blank'
 				className='card-wrapper large'
 				style={{ boxShadow: '0 0 40px 0 rgba(0, 0, 0, 0.05)' }}
